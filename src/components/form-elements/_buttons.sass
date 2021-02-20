@@ -1,0 +1,68 @@
+.button
+    box-sizing: border-box
+    display: flex
+    justify-content: center
+    align-items: center
+    min-width: 9.9rem
+    height: 4.4rem
+    border-radius: 2.2rem
+    font-size: 1.2rem
+    text-transform: uppercase
+    font-weight: 700
+    cursor: pointer
+    &__fill
+        background-image: linear-gradient(#bc9cff , #8ba4f9)
+        color: #ffffff
+        padding: 0 2rem
+        letter-spacing: -0.03rem
+        &_header
+            height: 3.4rem
+            margin-left: 2rem
+            letter-spacing: normal
+    &__fill-hover
+        background-image: linear-gradient(rgba(188,156,255,0.5), rgba(139,164,249,0.5))
+        color: #ffffff
+        padding: 0 2rem
+        letter-spacing: -0.03rem
+    &__outline
+        background-image: linear-gradient(#bc9cff , #8ba4f9)
+        color: #bc9cff
+        &_header
+            min-width: 8.7rem
+            height: 3.4rem
+    &__outline-hover
+        background-image: linear-gradient(rgba(188,156,255,0.5), rgba(139,164,249,0.5))
+        color: #bc9cff
+    &__outline-wrapper
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 9.4rem
+        height: 3.9rem
+        border-radius: 2rem
+        background-color: #ffffff
+        letter-spacing: -0.03rem
+        &_header
+            width: 8.3rem
+            height: 3rem
+    &__transparent
+        max-width: fit-content
+        min-width: auto
+        height: 1.9rem
+        color: #bc9cff
+    &__transparent-hover
+        max-width: fit-content
+        min-width: auto
+        height: 1.9rem
+        color: rgba(31, 32, 65, 0.5)
+    &__transfer
+        position: relative
+        width: 32rem
+        background-image: linear-gradient(#bc9cff , #8ba4f9)
+        color: #ffffff
+        &::after
+            content: url(../../icons/arrow_forw_white.svg)
+            position: absolute
+            top: 10px
+            right: 10px
+            cursor: pointer
