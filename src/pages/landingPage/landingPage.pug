@@ -7,3 +7,45 @@ html(lang="ru")
         title Landing page
     body
         include ../../components/header/header.pug
+        main.main
+            .container
+                .main__card-wrapper
+                    include ../../components/cards/card_find.pug
+                    .main__calendar-wrapper.main__calendar-wrapper_invisible
+                        .card.card_calendar
+                            .month-and-year
+                                .month-and-year__prev
+                                    img(src="../../icons/arrow_back.svg", alt="arrow_back")
+                                .month-and-year__month
+                                .month-and-year__year
+                                .month-and-year__next
+                                    img(src="../../icons/arrow_forward.svg", alt="arrow_forward")
+                            .calendar-wrapper                                
+                            .dropdown-list__btns.pt18
+                                            .button.button__transparent.ls-03 очистить
+                                            .button.button__transparent применить
+                    .main__dropdown-list-wrapper.main__dropdown-list-wrapper_invisible
+                        .dropdown-list
+                                .dropdown-list__item
+                                    .dropdown-list__item-title взрослые
+                                    .dropdown-list__value-block
+                                        .dropdown-list__minus-btn.dropdown-list__minus-btn_disabled -
+                                        .dropdown-list__item-value 0
+                                        .dropdown-list__plus-btn +
+                                .dropdown-list__item
+                                    .dropdown-list__item-title дети
+                                    .dropdown-list__value-block
+                                        .dropdown-list__minus-btn.dropdown-list__minus-btn_disabled -
+                                        .dropdown-list__item-value 0
+                                        .dropdown-list__plus-btn +
+                                .dropdown-list__item
+                                    .dropdown-list__item-title младенцы
+                                    .dropdown-list__value-block
+                                        .dropdown-list__minus-btn.dropdown-list__minus-btn_disabled -
+                                        .dropdown-list__item-value 0
+                                        .dropdown-list__plus-btn +
+                                .dropdown-list__btns
+                                    .button.button__transparent.invisible очистить
+                                    .button.button__transparent применить    
+            .main__text Лучшие номера для вашей работы, отдыха и просто вдохновения
+        include ../../components/footer/footer.pug

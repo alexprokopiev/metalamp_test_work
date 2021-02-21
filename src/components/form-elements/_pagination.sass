@@ -1,0 +1,30 @@
+.pagination
+    &__wrapper
+        display: flex
+    &__item
+        width: 4rem
+        height: 4rem
+        border-radius: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 1.2rem
+        font-weight: 700
+        color: $darkShade-50
+        cursor: pointer
+        &:first-child
+            background-image: $mainGradient
+            color: #ffffff
+        &:last-child
+            background-image: linear-gradient(#6FCF97, #66D2EA)
+            &::after
+                content: url(../../icons/arrow_forw_white.svg)
+                width: 2.4rem
+                height: 2.4rem
+    &__descr
+        display: flex
+        color: $darkShade-75
+        margin: 1.15rem .6rem 0
+        pre
+            font-family: montserrat
+            margin: 0

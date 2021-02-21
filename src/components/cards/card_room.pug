@@ -1,0 +1,31 @@
+mixin cardRoom(src,roomNum,lux,price,feedbacksNum,stars)   
+    .card.card_room
+        .room-slider
+            .room-slider__img-wrapper
+                img(src=src, alt=roomNum).room-slider__img
+            .room-slider__prev
+                img(src="../../icons/prev.svg", alt="prev")
+            .room-slider__next
+                img(src="../../icons/next.svg", alt="next")
+            .room-slider__dots
+                .room-slider__dot.room-slider__dot_active
+                .room-slider__dot
+                .room-slider__dot
+                .room-slider__dot
+        .number-and-price.number-and-price_card-room
+            .number-and-price__num.number-and-price__num_card-room №
+                span=roomNum 
+                .number-and-price__lux.number-and-price__lux_card-room=lux 
+            .number-and-price__price.number-and-price__price_card-room=price
+                span в сутки
+        .card-room__divider
+        .card-room__rating-wrapper
+            .rate-item
+                div(class=stars<1?"rate-item__star-outline":"rate-item__star-fill")
+                div(class=stars<2?"rate-item__star-outline":"rate-item__star-fill")
+                div(class=stars<3?"rate-item__star-outline":"rate-item__star-fill")
+                div(class=stars<4?"rate-item__star-outline":"rate-item__star-fill")
+                div(class=stars<5?"rate-item__star-outline":"rate-item__star-fill")
+            .card-room__feedbacks-volume
+                span=feedbacksNum
+                | Отзывов

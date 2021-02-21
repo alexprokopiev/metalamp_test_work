@@ -1,5 +1,6 @@
+@import '../../sass/_variables'
+
 .button
-    box-sizing: border-box
     display: flex
     justify-content: center
     align-items: center
@@ -9,9 +10,11 @@
     font-size: 1.2rem
     text-transform: uppercase
     font-weight: 700
+    border: none
+    outline: none
     cursor: pointer
     &__fill
-        background-image: linear-gradient(#bc9cff , #8ba4f9)
+        background-image: $mainGradient
         color: #ffffff
         padding: 0 2rem
         letter-spacing: -0.03rem
@@ -19,20 +22,24 @@
             height: 3.4rem
             margin-left: 2rem
             letter-spacing: normal
+        &:hover
+            background-image: $hoverGradient
     &__fill-hover
-        background-image: linear-gradient(rgba(188,156,255,0.5), rgba(139,164,249,0.5))
+        background-image: $hoverGradient
         color: #ffffff
         padding: 0 2rem
         letter-spacing: -0.03rem
     &__outline
-        background-image: linear-gradient(#bc9cff , #8ba4f9)
-        color: #bc9cff
+        background-image: $mainGradient
+        color: $purple
         &_header
             min-width: 8.7rem
             height: 3.4rem
+        &:hover
+            background-image: $hoverGradient
     &__outline-hover
-        background-image: linear-gradient(rgba(188,156,255,0.5), rgba(139,164,249,0.5))
-        color: #bc9cff
+        background-image: $hoverGradient
+        color: $purple
     &__outline-wrapper
         display: flex
         justify-content: center
@@ -49,17 +56,23 @@
         max-width: fit-content
         min-width: auto
         height: 1.9rem
-        color: #bc9cff
+        color: $purple
+        &:hover
+            color: $darkShade-50
     &__transparent-hover
         max-width: fit-content
         min-width: auto
         height: 1.9rem
-        color: rgba(31, 32, 65, 0.5)
+        color: $darkShade-50
     &__transfer
         position: relative
         width: 32rem
-        background-image: linear-gradient(#bc9cff , #8ba4f9)
+        background-image: $mainGradient
         color: #ffffff
+        justify-content: start
+        letter-spacing: .08rem
+        &:hover
+            background-image: $hoverGradient
         &::after
             content: url(../../icons/arrow_forw_white.svg)
             position: absolute

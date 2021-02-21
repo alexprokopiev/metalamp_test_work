@@ -1,0 +1,24 @@
+.like-item
+    display: flex
+    align-items: center
+    width: 4rem
+    height: 2rem
+    border-radius: 1rem
+    font-size: 1rem
+    cursor: pointer
+    &_inactive
+        border: .1rem solid $darkShade-25
+        color: $darkShade-25
+    &_active
+        background: $mainGradient
+        justify-content: center
+    &__active-wrapper
+        display: flex
+        align-items: center
+        width: 3.85rem
+        height: 1.8rem
+        border-radius: .9rem
+        background-color: #ffffff
+        color: $purple
+    &__img
+        margin: 0 .5rem

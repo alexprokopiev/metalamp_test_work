@@ -1,0 +1,277 @@
+.form-elements
+    &__item
+        width: 32rem
+    &__item-title
+        position: relative
+        text-align: left
+        color: $darkShade-100
+        text-transform: uppercase
+        line-height: 1.4rem
+    &__item-subtitle
+        position: absolute
+        top: 0
+        right: 0
+        display: flex
+        font-size: 1.2rem
+        text-align: right
+        color: $darkShade-50
+        text-transform: uppercase
+        font-weight: 400
+        pre
+            margin: 0 -0.2rem 0 0.2rem
+            width: 1.1rem
+        &_range-slider
+            right: 6rem
+            top: -0.1rem
+            letter-spacing: 0.01rem
+.date-dropdown-wrapper
+    display: flex
+    justify-content: space-between
+.text-field
+    width: 32rem
+    height: 4.4rem
+    border: .1rem solid #c7c8d0
+    border-radius: .4rem
+    padding: 0 0 0 1.4rem
+    color: $darkShade-25
+    font-size: 1.4rem
+    &:hover
+        border: 1px solid $darkShade-50
+        color: $darkShade-75
+        letter-spacing: .06rem
+    &::-webkit-input-placeholder
+        color: $darkShade-25
+    &_simple-text
+        letter-spacing: .13rem
+    &_masked-text
+        letter-spacing: .08rem
+    &_hover-focus
+        border: .1rem solid $darkShade-50
+        color: $darkShade-75
+        letter-spacing: 0.6px
+        &::-webkit-input-placeholder
+            color: $darkShade-75
+    &_dropdown
+        position: relative
+        display: flex
+        align-items: center
+        border: .1rem solid $darkShade-25
+        color: $darkShade-75
+        &::after
+            content: url(../../icons/arrow_down.svg)
+            position: absolute
+            top: .9rem
+            right: .9rem
+            height: 2.4rem
+            cursor: pointer
+    &_dropdown-expanded
+        border-radius: .4rem .4rem 0 0
+        border: .1rem solid #8f90a0
+    &_dropdown-amenities-default
+        border-radius: .4rem
+        width: 26.6rem
+    &_dropdown-amenities-expended
+        border-radius: .4rem .4rem 0 0
+        border: .1rem solid #8f90a0
+        width: 26.6rem
+    &_date-dropdown
+        width: 15rem
+        padding-bottom: .2rem
+    &_filter-date-dropdown
+        width: 26.6rem
+        padding-bottom: .2rem
+    &__divider
+        padding: 0 .4rem
+    &_subscription
+        position: relative
+        display: flex
+        align-items: center
+        width: 26.6rem
+        &::after
+            content: url(../../icons/arrow_forward.svg)
+            position: absolute
+            top: .9rem
+            right: .9rem
+            cursor: pointer
+    &_subscription-inner
+        font-family: montserrat
+        font-size: 1.4rem
+        color: $darkShade-25
+        border: none
+        padding: 0
+        margin: -0.1rem 0 0 -0.1rem
+        &::-webkit-input-placeholder
+            color: $darkShade-25
+.dropdown-amenities
+    width: 26.6rem
+    &_shadow
+        box-shadow: 0rem 1rem 2rem $darkShade-5
+.dropdown
+    &_shadow
+        box-shadow: 0rem 1rem 2rem $darkShade-5
+.dropdown-list-wrapper
+    position: absolute
+    top: 67.4rem
+    width: 26.6rem
+    &_invisible
+        display: none
+.dropdown-list
+    border-radius: 0 0 .4rem .4rem
+    border: .1rem solid #8f90a0
+    border-top: none
+    padding: .1rem .6rem .35rem 1.4rem
+    background-color: #ffffff
+    &__item
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__item-title
+        color: $darkShade-100
+        font-weight: 700
+        font-size: 1.2rem
+        text-transform: uppercase
+    &__value-block
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 9.2rem
+        padding: .5rem 0 .2rem
+    &__minus-btn
+        width: 3rem
+        height: 3rem
+        border: .1rem solid $darkShade-50
+        border-radius: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 1.8rem
+        color: $darkShade-50
+        cursor: pointer
+        &_disabled
+            opacity: 0.38
+            cursor: default
+    &__item-value
+        font-size: 1.2rem
+        font-weight: 700
+        color: $darkShade-100
+        padding-bottom: .2rem
+    &__plus-btn
+        width: 3rem
+        height: 3rem
+        border: .1rem solid $darkShade-50
+        border-radius: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 1.8rem
+        color: $darkShade-50
+        cursor: pointer
+    &__btns
+        display: flex
+        justify-content: space-between
+        padding: 1.6rem 0 .5rem
+.checkbox-item
+    padding-top: 1rem
+    input
+        width: 2rem
+        height: 2rem
+        margin: 0
+        position: absolute
+        z-index: -1
+        opacity: 0
+        &:checked
+            + label
+                &::before
+                    border-color: $purple
+                    background-color: #ffffff
+                    background: url(../../icons/check.svg) center 33% no-repeat
+    label
+        display: flex
+        align-items: start
+        color: $darkShade-50
+        cursor: pointer
+        line-height: 1.95rem
+        width: 24.5rem
+        &::before
+            content: ''
+            box-sizing: border-box
+            display: inline-block
+            width: 2rem
+            min-width: 2rem
+            height: 2rem
+            border: .1rem solid $darkShade-25
+            border-radius: .4rem
+            margin-right: 1rem
+    &_rich
+        height: 6rem
+        margin-top: .2rem
+        label
+            position: relative
+            font-weight: 700
+            color: $darkShade-75
+    &__rich-descr
+        position: absolute
+        top: 2.2rem
+        left: 3rem
+        width: 22.3rem
+        font-size: 1.2rem
+        font-weight: 400
+        color: $darkShade-50
+        line-height: 1.5rem
+        margin-top: .2rem
+.radio
+    display: flex
+    &_card-registration
+        margin-top: 1.1rem
+        padding-bottom: .5rem
+.radio-item
+    &:first-child
+        margin-right: 2rem
+    input
+        margin: 0
+        width: 2rem
+        height: 2rem
+        position: absolute
+        z-index: -1
+        opacity: 0
+        &:checked
+            + label
+                color: $darkShade-75
+                &::before
+                    background: url(../../icons/dot_purple.svg) center center no-repeat
+                    border: .1rem solid $purple
+                    border-radius: 100%
+    label
+        display: flex
+        color: $darkShade-50
+        cursor: pointer
+        &::before
+            content: ''
+            width: 2rem
+            height: 2rem
+            margin-right: 1rem
+            border: .1rem solid $darkShade-25
+            border-radius: 100%
+.checkbox-list
+    width: 26.6rem
+    &_close
+        position: relative
+        &::after
+            content: url(../../icons/arrow_down.svg)
+            position: absolute
+            top: -0.4rem
+            right: 1rem
+            height: 2.4rem
+            cursor: pointer
+    &_open
+        position: relative
+        &::after
+            content: url(../../icons/arrow_up.svg)
+            position: absolute
+            top: -0.4rem
+            right: 1rem
+            width: 2.4rem
+            height: 2.4rem
+            cursor: pointer
+            display: flex
+            justify-content: center

@@ -1,2 +1,35 @@
 @import '../../sass/_general'
 @import '../../components/header/_header'
+@import '../../components/cards/_cards'
+@import '../../components/footer/_footer'
+
+.main
+    position: relative
+    height: 83rem
+    background: url(./img/main_bg1.jpg) center center/cover no-repeat
+    &__card-wrapper
+        position: relative
+        padding-top: 7rem
+    &__calendar-wrapper
+        position: absolute
+        top: 25.8rem
+        left: 3rem
+        &_invisible
+            display: none
+    &__text
+        position: absolute
+        bottom: 2rem
+        right: 17.4rem
+        width: 29.7rem
+        height: 4.8rem
+        text-align: right
+        line-height: 2.4rem
+        color: $darkShade-75
+    &__dropdown-list-wrapper
+        position: absolute
+        top: 33.9rem
+        left: 3rem
+        &_invisible
+            display: none
+    & .dropdown-list
+        width: 32rem

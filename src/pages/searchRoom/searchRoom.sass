@@ -1,0 +1,39 @@
+@import '../../sass/_general'
+@import '../../components/header/_header'
+@import '../../components/cards/_cards'
+@import '../../components/footer/_footer'
+@import '../../components/form-elements/_inputs'
+@import '../../components/form-elements/_range-slider'
+@import '../../components/form-elements/_pagination'
+
+.search-room
+    background-color: #ffffff
+    padding: 3rem 0 7.5rem
+    border-bottom: .2rem solid $darkShade-25
+    box-shadow: 0 1rem 2rem 0 $darkShade-5 inset
+    &__wrapper
+        display: flex
+    &__filter-wrapper
+        position: relative
+        min-width: 32.6rem
+    &__card-room-wrapper
+        margin-top: 1rem
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    & .room-slider
+        &__prev
+            display: none
+        &__next
+            display: none
+        &:hover
+            & .room-slider
+                &__prev
+                    display: flex
+                &__next
+                    display: flex
+    &__pagination-wrapper
+        margin: 3rem 1.4rem 0 0
+        display: flex
+        flex-direction: column
+        align-items: center

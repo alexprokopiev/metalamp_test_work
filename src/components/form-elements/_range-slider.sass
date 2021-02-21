@@ -1,0 +1,31 @@
+.range-slider
+    &__scale
+        position: relative
+        display: flex
+        align-items: center
+        width: 26.6rem
+        height: .6rem
+        border-radius: .3rem
+        border: solid .1rem $darkShade-25
+    &__interval
+        position: absolute
+        left: 7.4rem
+        width: 8.5rem
+        height: .6rem
+        background-image: linear-gradient(to top, #6fcf97, #66d2ea)
+    &__roller
+        position: absolute
+        width: 1.5rem
+        height: 1.5rem
+        border-radius: 100%
+        border: solid .2rem #ffffff
+        background-image: linear-gradient(to top, #6fcf97, #66d2ea)
+        cursor: pointer
+        &_min
+            left: 7.4rem
+        &_max
+            left: calc(7.4rem + 8.5rem)
+    &__descr
+        margin-top: 1.4rem
+        font-size: 1.2rem
+        color: $darkShade-50

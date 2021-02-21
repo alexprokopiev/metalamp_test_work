@@ -81,31 +81,31 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./pages/landingPage/landingPage.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./pages/registration/registration.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./pages/landingPage/landingPage.js":
-/*!******************************************!*\
-  !*** ./pages/landingPage/landingPage.js ***!
-  \******************************************/
+/***/ "./pages/registration/registration.js":
+/*!********************************************!*\
+  !*** ./pages/registration/registration.js ***!
+  \********************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _landingPage_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./landingPage.sass */ \"./pages/landingPage/landingPage.sass\");\n/* harmony import */ var _landingPage_sass__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_landingPage_sass__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./pages/landingPage/landingPage.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _registration_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./registration.sass */ \"./pages/registration/registration.sass\");\n/* harmony import */ var _registration_sass__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_registration_sass__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./pages/registration/registration.js?");
 
 /***/ }),
 
-/***/ "./pages/landingPage/landingPage.sass":
-/*!********************************************!*\
-  !*** ./pages/landingPage/landingPage.sass ***!
-  \********************************************/
+/***/ "./pages/registration/registration.sass":
+/*!**********************************************!*\
+  !*** ./pages/registration/registration.sass ***!
+  \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./pages/landingPage/landingPage.sass?");
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./pages/registration/registration.sass?");
 
 /***/ })
 
